@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Ayezah Bagro | CSS Effects</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&family=Merriweather&family=Roboto+Mono&family=Roboto+Slab:wght@300;400&family=Sacramento&display=swap" rel="stylesheet">
+
+	<style>
+		body{
+			background-color: #ebdce3;
+		}
+		#header{
+			background-image: url(lab10_img/lab10_header.jpeg);
+			height:  300px;
+			background-size: cover;
+			background-position: center;
+
+			font-size: 2em;
+			text-align: center;
+			line-height: 300px;
+			margin-top:  0px;
+			font-family: 'Bree Serif', serif;
+		}
+		h2{
+			font-family: 'Bree Serif', serif;
+			text-align: center;
+			font-size: 1.5em;
+		}
+
+		#content{
+			width: 1300px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#container{
+			display: flex;
+		}
+
+		#container img{
+			width: 300px;
+			height: auto;
+			margin: 10px;
+		}
+
+		#cover{
+			position: relative;
+			left: 525px;
+			z-index: 4;
+		}
+
+		#first_album{
+			position: relative;
+			left: 205px;
+			z-index: 3;
+		}
+		#second_album{
+			position: relative;
+			right: 115px;
+			z-index: 2;
+		}
+		#third_album{
+			position: relative;
+			right: 435px;
+			z-index: 1;
+		}
+		#first{
+			font-size: 1.5em;
+			font-family: 'Bree Serif', serif;
+			text-align: center;
+		}
+
+		#second{
+			font-size: 0.75em;
+			font-family: 'Bree Serif', serif;
+		}
+
+		#container{
+			transform: scale(1);
+			transition: all 1s;
+		}
+
+		#container:hover{
+			transform: scale(1.25);
+			transition: all 0s ease;
+		}
+
+
+		#container:hover #cover{
+			transform: translateX(-525px);
+			transition: all 1s ease;
+		}
+		
+		#container #cover{
+			transition: all 1s ease 0s;
+		}
+
+		#container:hover #first_album{
+			transform: translateX(-205px);
+			transition: all 1s ease;
+		}
+
+		#container #first_album{
+			transition: all 1s ease 0s;
+		}
+
+
+		#container:hover #second_album{
+			transform: translateX(115px);
+			transition: all 1s ease;
+		}
+
+		#container #second_album{
+			transition: all 1s ease 0s;
+		}
+
+
+		
+		#container:hover #third_album{
+			transform: translate(435px);
+			transition: all 1s ease;
+		}
+
+		#container #third_album{
+			transition: all 1s ease 0s;
+		}
+	
+
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>Taylor Swift's Top 3 Albums</h1>
+	</div> <!-- #header -->
+	<div id="content">
+		<h2>Taylor Swift's Top 3 Albums according to ChartMasters.org</h2>
+		<div id="container">
+				<img id="cover" src="lab10_img/album_cover.png" alt="Taylor Swift's Top 3 Albums">
+				<img id="first_album" src="lab10_img/swift_1989.jpeg" alt="Taylor Swift's 1989 album">
+				<img id="second_album" src="lab10_img/swift_fearless.png" alt="Taylor Swift's Fearless album">
+				<img id="third_album" src="lab10_img/swift_red.png" alt="Taylor Swift's Red album">
+		</div><!--  #container -->
+		<p id="first">Taylor Swift's Top 3 Albums* include: <em>1989</em> with 10,545,000 global sales, <em>Fearless</em> with 9,970,000 global sales, and <em>Red</em> with 7,220,000 global sales.</p>
+		<p id="second">*This data is according to ChartMasters.org's November 3, 2022 data.</p>
+	</div> <!-- #content -->
+</body>
+</html>

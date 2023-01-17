@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Horizons | Application Form </title>
+	<style>
+		.form-row{
+			margin:  10px 0px;
+			display: flex;
+		}
+		.form-col{
+			width: 200px;
+		}
+		#content{
+				width: 900px;
+				margin-left: auto;
+				margin-right: auto;
+				background-color: lightblue;
+				padding:  20px;
+		}
+
+		body{
+			background-color: lightseagreen;
+		}
+
+		#info{
+			text-align: center;
+		}
+
+		img{
+			height: 200px ;
+			width: auto;
+		}
+
+
+
+
+	</style>
+</head>
+	<div id="content">
+	<div id="info">
+		<img src="lab05_images/horizons_logo_copy.png" alt="Horizons Logo">
+		<h1>Horizons</h1>
+		<p>A college application mentorship organization for Guam's high school students.</p> 
+		<p>For more information, please contact <a href= "mailtohorizons.gu@gmail.com"> horizons.gu@gmail.com</a></p>
+	</div>
+	<form action="confirmation.html">
+
+		<div class="form-row">
+			<div class="form-col">
+				<label for="fname-id">First Name:</label>
+			</div>
+			<input id="fname-id" type="text" placeholder="Tommy">
+		</div>
+		<div class="form-row">
+			<div class="form-col">
+				<label for="lname-id"> Last Name: </label>
+			</div>
+			<input id="lname-id" type="text" placeholder="Trojan">
+		</div>
+		<div class="form-row">
+			<div class="form-col">
+				<label for="email-id"> Personal Email: </label>
+			</div>
+			<input id="email-id" type="email" placeholder="ttrojan@gmail.com">
+		</div>
+
+		<div class="form-row">
+			<div class="form-col">
+				Role:
+			</div>
+
+			<label>
+				<input type="radio" name="role">
+				Ambassdor
+			</label>
+
+			<label>
+				<input type="radio" name="role">
+				Mentee
+			</label>
+
+			<label>
+				<input type="radio" name="role">
+				Mentor
+			</label>
+		</div>
+
+		<div class="form-row">
+			<div class="form-col">
+				Services:
+			</div>
+
+			<label>
+				<input type="checkbox">
+				Committed Mentorship
+			</label>
+
+			<label>
+				<input type="checkbox">
+				College Application Building
+			</label>
+
+			<label>
+				<input type="checkbox">
+				Essay Proofreading
+			</label>
+
+		</div>
+		
+		<div class="form-row">
+
+			<div class="form-col">
+
+				<label for="major">Major:</label>
+			</div>
+
+			<select id="major">
+				<option>UNDECIDED</option>
+				<option>AGRICULTURE & NATURAL RESOURCES CONSERVATION</option>
+				<option>ARCHITECTURE</option>
+				<option>AREA, ETHNIC, & MULTIDISCIPLINARY STUDIES</option>
+				<option>ARTS: VISUAL & PERFORMING</option>
+				<option>BUSINESS</option>
+				<option>COMMUNICATIONS</option>
+				<option>COMMUNITY, FAMILY, & PERSONAL SERVICES</option>
+				<option>COMPUTER SCIENCE & MATHEMATICS</option>
+				<option>EDUCATION</option>
+				<option>ENGINEERING</option>
+				<option>ENGINEERING TECHNOLOGY & DRAFTING</option>
+				<option>ENGLISH & FOREIGN LANGUAGES</option>
+				<option>HEALTH ADMINISTRATION & ASSISTING</option>
+				<option>HEALTH SCIENCES & TECHNOLOGIES</option>
+				<option>PHILOSOPHY, RELIGION, & THEOLOGY</option>
+				<option>REPAIR, PRODUCTION, & CONSTRUCTION</option>
+				<option>SCIENCES: BIOLOGICAL & PHYSICAL</option>
+				<option>SOCIAL SCIENCES & LAW</option>
+			</select>
+
+		</div>
+
+		<div class="form-row">
+
+			<div class="form-col">
+				<label for="msg">Questions? Comments? Concerns?</label>
+			</div>
+			<div class="form-row">
+
+				<textarea id="msg" placeholder="Enter your message here!"></textarea>
+			</div>
+		</div>
+	
+		<div id="form-row">
+			<label>
+				<input type="checkbox">
+				I accept terms & conditions.
+			</label>
+		</div>
+
+		<div class="form-row">
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</div>
+	</form>
+</div>
+</html>
+
+

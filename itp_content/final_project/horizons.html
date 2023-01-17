@@ -74,9 +74,9 @@
 			margin-top: 20px;
 		}
 
-		#mission-section h2{
+		/*#mission-section h2{
 			width: 1100px;
-		}
+		}*/
 
 		#mission p{
 			margin: 10px;
@@ -88,7 +88,7 @@
 
 		#logo{
 			width: 400px;
-			height: auto;
+			height: 400px;
 		  	animation: 2s infinite alternate floating;
 		}
 
@@ -96,8 +96,8 @@
 			background-color: #069c54;
 			text-align: center;
 			color: white;
-			margin-left: auto;
-			margin-right:auto;
+			/*margin-left: auto;
+			margin-right:auto;*/
 			font-size: 1.75em;
 
 
@@ -379,6 +379,33 @@
 			transition: all 1s ease 0s;
 		}
 
+		/*body{
+			height: 100%;
+		}
+*/
+		.parallax {
+		  /* The image used */
+		  background-image: url("media/uni_parallax_3.png");
+
+		  /* Set a specific height */
+		  min-height: 450px;
+
+		  /* Create the parallax scrolling effect */
+		  background-attachment: fixed;
+		  background-position: top;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+
+		  border-radius: 25px;
+		  display:none;
+		 /* background-position: left top;
+		  background-repeat: repeat;
+		  padding: 20px;
+		  width: auto;*/
+/*		  height: 350px;*/
+
+		}
+
 		.shadow{
 		  height:2px;
 		  display:block;
@@ -410,6 +437,56 @@
 		    width:180px;
 				box-shadow:0px 10px 8px rgba(0,0,0,.8);
 			}
+		}
+
+		/* Medium Devices */
+		@media (max-width: 991px) {
+
+			#content{
+				width: 100%;
+			}
+			#mission-section h2{
+				width:auto;
+			}
+			#logo{
+				width: auto;
+				max-height: 100%;
+			}
+
+			#navbar{
+				position:static;
+				justify-content:normal;
+				width:auto;
+			}
+			/*#menu_logo{
+				width:auto;
+				margin:0px;
+			}*/
+			#stamp {
+				display:none;
+			}
+			#navbar li{
+				width: 100%;
+			}
+
+			#university{
+				display:none;
+
+			}
+			.parallax{
+				display:block;
+				background-position: bottom;
+				background-size: contain;
+				border-radius: 25px;
+
+			}
+			
+		}
+
+		@media (max-width: 767px){
+			#content{
+				width: auto;
+
 		}
 
 	</style>
@@ -489,6 +566,7 @@
 		</div><!-- #advice-section -->
 		<div id="school-section">
 			<h2>Our Schools!</h2>
+			<div class="parallax"></div>
 			<div id="university">
 				<div id="uni_cover">
 					<img src="media/a8_media/universities/uni_cover.png" alt="Work with members from these universities">

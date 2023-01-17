@@ -109,3 +109,21 @@ body{
 html{
 	scroll-behavior: smooth;
 }
+
+@media (max-width: 991px) {
+
+	#content{
+		width: auto;
+	}
+
+	#navbar{
+		position:static;
+		justify-content:normal;
+		width:auto;
+	}
+	
+	#stamp {
+		display:none;
+	}
+	
+}

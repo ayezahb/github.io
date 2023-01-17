@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Guam, College Applications, High School Seniors, Mentorship, Essay Proofreading, College Networking, College List Building, College Information Sessions, Off Island Studies, Mariana Islands">
+	<meta name="description" content="This is a website designed for Horizons. Horizons is a local organization that helps with college applications and mentorship for Guam high school seniors. The organization’s goal is to help college applicants gain confidence and become strong applicants during their college applications process.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Horizons</title>
+
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Bree+Serif&family=Calistoga&family=DM+Serif+Display&family=Itim&family=Lato&family=Merriweather&family=Montserrat+Alternates&family=Quattrocento&family=Roboto+Mono&family=Roboto+Slab:wght@300;400&family=Rokkitt&family=Sacramento&family=Yeseva+One&display=swap" rel="stylesheet">
+
+	<style>
+		@font-face{
+			font-family: "Shorelines Script Bold";
+			src:  url("fonts/Shorelines Script Bold.otf");
+		}
+
+		#header{
+			background-image: url('media/a8_media/horizons_art.PNG');
+			height:  350px;
+			background-size: cover;
+			background-position: center;
+
+
+			font-size: 2.0em;
+			text-align: center;
+
+			border-radius: 25px;
+			background-position: left top;
+			background-repeat: repeat;
+			padding: 20px;
+			width: auto;
+			height: 350px;
+		}
+
+		body{
+			margin-top: 0px;
+		}
+		h1{
+			padding-top: 0px;
+			margin-top: 0px;
+			font-family: 'DM Serif Display', serif;
+		}
+
+		#header > p{
+			padding-top: 50px;
+			font-size: 0.75em;
+			font-family:"Shorelines Script Bold", cursive;
+		}
+
+		
+
+		#mission{
+			font-size: 1.25em;
+			font-family: 'Rokkitt', serif;
+			display: flex;
+			flex-direction: row;
+		}
+
+		#mission-section{
+			display:flex;
+			flex-direction:column;
+
+			background-color: #86e2eb;
+
+			border-radius: 25px;
+			background-position: left top;
+			background-repeat: repeat;
+			padding: 20px;
+			width: auto;
+			margin-top: 20px;
+		}
+
+		/*#mission-section h2{
+			width: 1100px;
+		}*/
+
+		#mission p{
+			margin: 10px;
+		}
+		#statement{
+			display: flex;
+			flex-direction: column;
+		}
+
+		#logo{
+			width: 400px;
+			height: 400px;
+		  	animation: 2s infinite alternate floating;
+		}
+
+		h2{
+			background-color: #069c54;
+			text-align: center;
+			color: white;
+			/*margin-left: auto;
+			margin-right:auto;*/
+			font-size: 1.75em;
+
+
+			border-radius: 25px;
+			background-position: left top;
+			background-repeat: repeat;
+			padding: 20px;
+			height: 30px;
+			line-height:30px;
+
+			font-family: 'Yeseva One', cursive;
+		}
+
+
+		h3{
+			padding: 10px;
+		}
+
+		.advices img{
+			width: 450px;
+			height: 450px;
+			margin-left: auto;
+			margin-right: auto;
+
+			border-radius: 25px;
+			background-position: left top;
+			background-repeat: repeat;
+		}
+		#advices_slides{
+			width: 450px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 0px;
+			height: 450px;
+
+		}
+
+		#slides{
+			margin: 30px;
+		}
+		#advice-section{	
+			background-color: #69dbbe;
+
+			border-radius: 25px;
+			background-position: left top;
+			background-repeat: repeat;
+			padding: 20px;
+			width: auto;
+
+		}
+
+		#advice{
+			display: flex;
+			flex-direction: row-reverse;
+		}
+
+		#advice-text{
+			margin: 20px;
+			font-size: 1.5em;
+			font-family: 'Itim', cursive;
+		}
+
+		#school-section{
+			background-color: #52cdf7;
+
+			border-radius: 25px;
+			background-position: left top;
+			background-repeat: repeat;
+			padding: 20px;
+			width: auto;
+		}
+
+
+		#uni img{
+			width: 200px;
+			height: 200px;
+			margin-left: auto;
+			margin-right: auto;
+
+			border-radius: 25px;
+			background-position: left top;
+			background-repeat: repeat;
+		}
+
+		#uni_cover img{
+			margin-top: 200px;
+			width: 465px;
+			height: 465px;
+			border-radius: 25px;
+			background-position: left top;
+			background-repeat: repeat;
+			position: relative;
+			top: 20px;
+			left: 380px;
+			z-index: 11;
+		}
+
+		#uni_1{
+			position:relative;
+			bottom: 450px;
+			left: 380px;
+			z-index: 10;
+
+		}
+
+		#uni_2{
+			position:relative;
+			bottom: 360px;
+			left: 177px;
+			z-index: 9;
+
+		}
+
+		#uni_3{
+			position:relative;
+			bottom: 290px;
+			right: 20px;
+			z-index: 8;
+
+		}
+
+		#uni_4{
+			position:relative;
+			bottom: 210px;
+			right: 220px;
+			z-index: 7;
+
+		}
+
+		#uni_5{
+			position:relative;
+			bottom: 210px;
+			right: 320px;
+			z-index: 6;
+
+		}
+
+
+		#uni_6{
+			position:relative;
+			bottom: 420px;
+			left: 620px;
+			z-index: 5;
+
+		}
+
+
+		#uni_7{
+			position:relative;
+			bottom: 475px;
+			left: 420px;
+			z-index: 4;
+
+		}
+
+		#uni_8{
+			position:relative;
+			bottom: 575px;
+			left: 215px;
+			z-index: 3;
+
+		}
+
+
+		#uni_9{
+			position:relative;
+			bottom: 650px;
+			left: 20px;
+			z-index: 2;
+
+		}
+
+		#uni_10{
+			position:relative;
+			bottom: 650px;
+			right: 300px;
+			z-index: 1;
+
+		}
+
+		#university{
+			transform: scale(0.75);
+			transition: all 1s;
+		}
+
+
+		#university:hover{
+			transform: scale(1);
+			transition: all 0s ease;
+		}
+
+		#university:hover #uni_1{
+			transform: translate(-300px, -220px);
+			transition: all 1s ease;
+		} 
+
+		#university #uni_1{
+			transition: all 1s ease 0s;
+		}
+
+		#university:hover #uni_2{
+			transform: translate(-300px, -75px);
+			transition: all 1s ease;
+		} 
+
+		#university #uni_2{
+			transition: all 1s ease 0s;
+		}
+
+		#university:hover #uni_3{
+			transform: translate(-310px, 75px);
+			transition: all 1s ease;
+		}
+
+		#university #uni_3{
+			transition: all 1s ease 0s;
+		}
+
+		#university:hover #uni_4{
+			transform: translate(-315px, 245px);
+			transition: all 1s ease;
+		}
+
+		#university #uni_4{
+			transition: all 1s ease 0s;
+		}
+
+		#university:hover #uni_5{
+			transform: translateY(245px);
+			transition: all 1s ease;
+		}
+
+		#university #uni_5{
+			transition: all 1s ease 0s;
+		}
+
+		#university:hover #uni_6{
+			transform: translate(295px, 250px);
+			transition: all 1s ease;
+		}
+
+		#university #uni_6{
+			transition: all 1s ease 0s;
+		}
+
+		#university:hover #uni_7{
+			transform: translate(290px, 55px);
+			transition: all 1s ease;
+		}
+
+		#university #uni_7{
+			transition: all 1s ease 0s;
+		}
+
+		#university:hover #uni_8{
+			transform: translate(290px, -63px);
+			transition: all 1s ease;
+		} 
+
+		#university #uni_8{
+			transition: all 1s ease 0s;
+		}
+
+		#university:hover #uni_9{
+			transform: translate(275px, -220px);
+			transition: all 1s ease;
+		} 
+
+		#university #uni_9{
+			transition: all 1s ease 0s;
+		}
+
+		#university:hover #uni_10{
+			transform: translate(-20px, -220px);
+			transition: all 1s ease;
+		}
+
+		#university #uni_10{
+			transition: all 1s ease 0s;
+		}
+
+		/*body{
+			height: 100%;
+		}
+*/
+		.parallax {
+		  /* The image used */
+		  background-image: url("media/uni_parallax_3.png");
+
+		  /* Set a specific height */
+		  min-height: 450px;
+
+		  /* Create the parallax scrolling effect */
+		  background-attachment: fixed;
+		  background-position: top;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+
+		  border-radius: 25px;
+		  display:none;
+		 /* background-position: left top;
+		  background-repeat: repeat;
+		  padding: 20px;
+		  width: auto;*/
+/*		  height: 350px;*/
+
+		}
+
+		.shadow{
+		  height:2px;
+		  display:block;
+		  margin:15px auto;
+		  animation: 1s infinite alternate shadow;
+		}
+
+		@keyframes floating {
+			0% {
+				transform: translatey(0px);
+			}
+			50% {
+				transform: translatey(-10px);
+			}
+			100% {
+				transform: translatey(0px);
+			}
+		}
+		@keyframes shadow {
+			0% {
+		    width:180px;
+				box-shadow:0px 10px 8px rgba(0,0,0,.8);
+			}
+			50% {
+		    width:150px;
+				box-shadow:0px 10px 8px rgba(0,0,0,.5);
+			}
+			100% {
+		    width:180px;
+				box-shadow:0px 10px 8px rgba(0,0,0,.8);
+			}
+		}
+
+		/* Medium Devices */
+		@media (max-width: 991px) {
+
+			#content{
+				width: 100%;
+			}
+			#mission-section h2{
+				width:auto;
+			}
+			#logo{
+				width: auto;
+				max-height: 100%;
+			}
+
+			#navbar{
+				position:static;
+				justify-content:normal;
+				width:auto;
+			}
+			/*#menu_logo{
+				width:auto;
+				margin:0px;
+			}*/
+			#stamp {
+				display:none;
+			}
+			#navbar li{
+				width: 100%;
+			}
+
+			#university{
+				display:none;
+
+			}
+			.parallax{
+				display:block;
+				background-position: bottom;
+				background-size: contain;
+				border-radius: 25px;
+
+			}
+			
+		}
+
+		@media (max-width: 767px){
+			#content{
+				width: 100%;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div id="navbar">
+		<div id="stamp">
+			<img id="menu_logo" src="media/a8_media/horizons_logo.png" alt="Horizons Guam logo"><p>Horizons Guam</p>
+		</div>
+		<ul>
+			<li> 
+				<a id="active-nav" href="horizons.html">Home</a> 
+				<ul>
+					<li> <a href="horizons.html#mission-section"> Our Mission </a></li>
+					<li> <a href="horizons.html#advice-section"> College Advice! </a></li>
+					<li> <a href="horizons.html#school-section"> Our Schools! </a></li>
+				</ul>
+			</li>
+
+			<li> 
+				<a href="services.html">Services</a> 
+				<ul>
+					<li><a href="services.html#committed-section">CM</a></li>
+					<li><a href="services.html#application-section">BCA</a></li>
+					<li><a href="services.html#essay-section">EP</a></li>
+					<li><a href="services.html#networking-section">CISN</a></li>
+				</ul>
+			</li>
+
+			<li> <a href="board.html">Board</a> </li>
+			<li> <a href="members.html">Members</a> </li>
+			<li> <a href="contact.html">Learn More</a> </li>
+		</ul>
+	</div> <!-- #navbar -->
+	<div id="header">
+		<p> Hafa Adai !</p>
+		<h1> <!-- <div id="greeting">Håfa Adai</div><br> -->Horizons</h1>
+	</div> <!-- #header -->
+	<div id="content">
+		<div id="mission-section">
+			<h2> Our Mission </h2>
+			<div id="mission">
+				<div id="statement">
+					<p>Horizons Mentoring Organization, Guam (Horizonsguam)</p>
+					<p>Håfa Adai! We are a group of college students from Guam who are interested in giving disadvantaged/under-resourced high school students from home the opportunity to gain a better understanding of applying to and attending institutions off-island. Our goal is to mentor students in one-to-one or group settings with the intention of helping them understand their individual strengths and gain confidence as applicants. Our areas of mentorship include, but are not limited to, personalized advising sessions, college application breakdowns, essay proofreading, and college/university networking opportunities.</p>
+					<p>We hope that our contributions to the high school population will inspire local students to eventually return home and further enrich our island community with a diverse range of knowledge obtained beyond Guam’s horizon. Let us help you explore past your horizon!</p>
+					<h3>Help on the Horizon for the future of our island</h3>
+				</div> <!-- statement -->
+				<img id="logo" src="media/a8_media/horizons_logo.png" alt="Horizons Guam logo">
+			</div> <!-- #mission -->
+		</div><!-- #mission-section -->
+		<div id="advice-section">
+			<h2>College Advice!</h2>
+			<div id="advice">
+				<div id="advice-text">
+					<p>We know how confusing some college applications and FAFSA terminologies are, so here are some clarifications on the terms you need to know! We hope you will have a better understanding of the college applications process!</p>
+					<p>Sincerely,</p>
+					<p>	Horizons</p>
+				</div> <!-- #advice-text -->
+				<div id="slides">
+					<div id="advices_slides">
+						<div class="advices"><img src="media/a8_media/college_advice/terms_advice.png" alt="College application terms you’re probably confused about."></div>
+						<div class="advices"><img src="media/a8_media/college_advice/advice_one.png" alt="Early Action vs. Early Decision: Early Action is non-binding. You can apply to several schools under Early Action, but keep in mind of your early deadline! Early Decision is binding, so only apply to one school under this option. If you get accepted, you must attend that school."> </div>
+						<div class="advices"><img src="media/a8_media/college_advice/advice_two.png" alt="Retention rate: Percentage of first year students that return for their second year. Why is this important? It tells applicants what percent of freshmen like their experience enough to come back for their sophomore year. Source: UniGo."></div>
+						<div class="advices"><img src="media/a8_media/college_advice/advice_three.png" alt="Demonstrated interest: Student shows their interest in attending a specific institution prior to the official application process. Examples: taking a campus tour, requesting info. Why is this important? Some colleges use this as a way to gauge how likely you are to enroll. This can be a factor when making admission decisions. Source: The College Curators."></div>
+						<div class="advices"><img src="media/a8_media/college_advice/advice_four.png" alt="Safety school: School in which your academic credentials (GPA, SAT/ACT scores, etc.) exceed the average range for their most recently accepted class. You are certain you can get accepted. Source: Forbes Princeton Review."></div>
+						<div class="advices"><img src="media/a8_media/college_advice/advice_five.png" alt="Reach school: School in which your academic credentials (GPA, SAT/ACT scores, etc.) fall below the average range for their most recently accepted class. It's a long shot, but this should not discourage you from applying. Source: Forbes Princeton Review."></div>
+						<div class="advices"><img src="media/a8_media/college_advice/advice_six.png" alt="Target school: School in which your academic credentials (GPA SAT/ACT scores, etc.) are well within the average range for their most recently accepted class. Admission is not guaranteed, but it's not unreasonable to expect to get accepted. Source: Forbes Princeton Review."></div>
+						<div class="advices"><img src="media/a8_media/college_advice/advice_seven.png" alt="Requesting an Interview: Interviews are not required. This is one way to show demonstrated interest. However, if you choose to have an interview, it is typically with an alumni or admissions officer. Check your school's website for more info!"></div>
+						<div class="advices"><img src="media/a8_media/college_advice/advice_eight.png" alt="WICHE: Stands for Western Interstate Commission for Higher Education. Nonprofit organization that partners with postsecondary institutions from 16 Western states and territories to improve access to higher education for underserved students. Visit wiche.edu/about-us/ to learn more."></div>
+						<div class="advices"><img src="media/a8_media/college_advice/advice_nine.png" alt="WUE: Stands for Western Undergraduate Exchange. Undergraduate students who are residents of WICHE states or territories pay 150% of their school's in-state tuition instead of the out-of-tuition rate. Most of their participating schools are in the West Check your school if they offer WUE scholarships Visit wiche.edu/tuition-savings/wue//to learn more."></div>
+						<div class="advices"><img src="media/a8_media/college_advice/advice_ten.png" alt="Unsubsidized vs. Subsidized Loans: Both are types of federal loans you can get through FAFSA In unsubsidized loans, you are responsible to pay for the interest from the moment the money is in your account. In subsidized loans, the bank or government will pay for the interest while you are in school. Once you start repayment, they stop paying and you are responsible for the loan amount and the interest that accrues from that time you start paying. Source: Sallie Mae"></div>
+						<div class="advices"><img src="media/a8_media/college_advice/advice_eleven.png" alt="EFC: Stands for Expected Family Contribution. The dollar amount that a family is expected to pay toward a student's educational costs. Based on family earnings, assets, students in college, and family size. Why is this important? Impacts how much federal financial aid you receive and how much institutional financial aid colleges award you. Source: Forbes Advisor"></div>
+					</div> <!-- #advices_slides -->
+				</div> <!-- #slides -->
+			</div><!-- #advice -->
+		</div><!-- #advice-section -->
+		<div id="school-section">
+			<h2>Our Schools!</h2>
+			<div class="parallax"></div>
+			<div id="university">
+				<div id="uni_cover">
+					<img src="media/a8_media/universities/uni_cover.png" alt="Work with members from these universities">
+				</div> <!-- #uni_cover -->
+				<div id="uni">
+					<img id="uni_1" src="media/a8_media/universities/uni_1.png" alt="University of Southern California">
+					<img id="uni_2" src="media/a8_media/universities/uni_2.png" alt="Pepperdine University">
+					<img id="uni_3" src="media/a8_media/universities/uni_3.png" alt="The University of Texas At Austin">
+					<img id="uni_4" src="media/a8_media/universities/uni_4.png" alt="University of San Francisco">
+					<img id="uni_5" src="media/a8_media/universities/uni_5.png" alt="Marquette University">
+					<img id="uni_6" src="media/a8_media/universities/uni_6.png" alt="University of Guam">
+					<img id="uni_7" src="media/a8_media/universities/uni_7.png" alt="University of Nevada, Las Vegas">
+					<img id="uni_8" src="media/a8_media/universities/uni_8.png" alt="University of California, Los Angeles">
+					<img id="uni_9" src="media/a8_media/universities/uni_9.png" alt="Emory University">
+					<img id="uni_10" src="media/a8_media/universities/uni_10.png" alt="University of Notre Dame">
+				</div> <!-- #uni -->
+			</div> <!-- #university -->
+		</div> 	<!-- #school-section -->
+	</div><!--  #content -->
+	<div id="footer">
+		<p>Horizons &copy; 2021</p>
+	</div> <!-- #footer -->
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="slick/jquery.min.js"></script>
+	<script src="slick/slick.js"></script>
+	<script>
+		
+		$('#advices_slides').slick({
+			dots: true,
+  			slidesToShow: 1,
+ 			slidesToScroll: 1,
+ 			autoplay: true,
+ 			autoplaySpeed: 2000,
+ 		});
+
+	</script>
+
+</body>
+</html>
